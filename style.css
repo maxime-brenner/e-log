@@ -1,0 +1,200 @@
+color_fond {
+	--couleur-fond: rgb(244, 227, 111);
+	
+	couleur_background: rgb(242,242,242)
+}
+
+*{
+	font-family: Franklin Gothic Book, Calibri, Gothic;
+}
+
+p{
+	
+	font-size: 1.05em;
+	margin-block-start: auto;
+    margin-block-end: auto;
+}
+
+a{
+	color:black;
+	text-decoration:none;
+}
+
+a:visited{
+	color:black;
+}
+
+strong {
+	border=1px black;
+	background-color=red;
+}
+
+h1{
+	font-size:1.5em;
+	margin-top:0px;
+	margin-block-start:0px;
+	margin-bottom:3px;
+	color:red;
+	border-bottom: 2px red solid;
+	
+}	
+
+body{
+	width: 75%;
+	margin: auto;
+	background-color:rgb(242,242,242);
+}
+
+.en_tete{
+	display:flex;
+	justify-content: space-between;
+}
+
+#secondaire{
+	display: inline;
+}
+
+.menu_secondaire{
+	float:left;
+	width: 100%;
+	text-align: center;
+	background: linear-gradient(to bottom, white, rgb(244, 227, 111) );
+}
+
+#secondaire {
+	display:inline-block;
+}
+
+img{
+	margin-left: 28px;
+	text-align:left;
+}
+
+#principal{
+	display:flex;
+	justify-content:flex-start;
+	margin-left: -10px;
+}
+
+nav a{
+	display: block;
+	text-decoration: none;
+	color:black;
+	padding: 10px;
+	border-bottom: 2px solid transparent;
+}
+
+.lien_menu:hover{
+	color: red;
+	border-bottom: 2px solid red;
+	transition: 0.3s;
+}
+	
+nav ul{
+	list-style-type: none;
+}
+
+.menu{
+	float:left;
+	width: 25%;
+	text-align: center;
+	background: linear-gradient(to bottom, white, rgb(244, 227, 111) );
+}
+
+footer{
+	display:flex;
+	justify-content: space-around;
+}
+
+footer li{
+	list-style-type:none;
+	text-decoration: none;
+}
+
+div{
+	padding: 5px 5px 5px 5px;
+	border: 2px red solid;
+	margin-bottom: 15px;
+	margin-left: 30px;
+	background-color: rgb(255,255,255);
+}
+
+#infog label {
+	display:inline-block;
+	justify-content:center;
+	width:relative;
+	margin-bottom:3px;
+	padding: 2px;
+}
+
+#fm_diabete{
+	display:inline_block;
+	flex-wrap:wrap;
+}
+
+#fm_diabete p, #titre {
+	color:red;
+}
+
+.infog li{
+	list-style-type:none;
+	flex-wrap:wrap;
+	justify-content:center;
+}
+
+input[type=text], input[type=number]{
+	margin:2px;
+	height:50%;
+	padding:5px;
+}
+
+input[type=text]:focus, input[type=number]:focus{
+	border: 2px solid red;
+}
+
+table{
+	border-collapse:collapse;
+	margin:auto;
+}
+
+td, th{
+	border: 1px solid black;
+	text-align:center;
+}
+
+tr:hover{
+	background-color:blue;
+	
+}
+
+nav ul::after{
+	content:"";
+	display:table;
+	clear:both;
+}
+
+.sous {
+	display: none;
+	box-shadow: 0px 1px 2px #CCC;
+	background: linear-gradient(to bottom, rgb(244, 227, 111), white);
+	position: absolute;
+	width: 85%;
+	z-index: 1000;
+}
+
+.barre_principale > ul li:hover .sous{
+	display:block;
+}
+
+.sous li{
+	float: none;
+	width: 100%;
+	text-align:left;
+}
+
+nav ul li{
+	float: left;
+	width: 25%;
+	text-align: center;
+	position: relative;
+}
